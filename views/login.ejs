@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form method="post" action="/login" class="container">
+        <h1>Login to FRAS</h1>
+        <div class="box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" name="username" placeholder="Enter Your Username" id="email">
+       </div>
+       <div class="box">
+           <i class="fa-solid fa-key"></i>
+           <input type="password" placeholder="Enter Your Password" name="password" id="password">
+       </div>
+       <button type="submit" class="btn">Sign in</button>
+       <p class="travel">Don't have an account? <a href="/signup"> Sign Up</a></p>
+    </form>
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".container"),{
+		max: 25,
+		speed: 400
+	});
+</script>
+</html>
